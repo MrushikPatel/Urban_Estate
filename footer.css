@@ -1,0 +1,56 @@
+.ftin p {
+    font-family: "Lato", sans-serif;
+    font-size: medium;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.ftin img{
+    margin-top: 17px;
+}
+
+.container-fluid h3{
+    font-size: 45px;
+    font-family: "Lato",sans-serif;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+.ftin ul {
+    margin-left: 148px;
+}
+
+.ftin ul li {
+    padding-right: 10px; /* Adjust as needed */
+}
+
+.container-fluid a {
+    text-decoration: none;
+    color: black;
+}
+
+.container-fluid a:hover {
+    color: gray;
+    text-decoration: underline;
+}
+
+.container-fluid ul li {
+    list-style: none;
+}
+
+.container-fluid h5 {
+    padding-left: 20px;
+    padding-top: 30px;
+}
+
+.set h3 {
+    margin-top: 40px;
+    font-family: "Lato", sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.set img {
+    margin-right: 20px;
+}

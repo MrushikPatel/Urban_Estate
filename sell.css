@@ -1,0 +1,299 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    border: 1px solid #ccc;
+    margin: 20px 0;
+    opacity: 0.05 !important;
+    /* Adjust the opacity value (0 to 1) as needed */
+}
+
+.menu_bar {
+    height: 80px;
+    width: 100%;
+    color: rgb(37, 37, 37);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    
+    
+}
+.menu_bar img{
+    margin-top: 0px;
+    margin-bottom: 12px;
+}
+
+.menu_bar ul {
+    list-style: none;
+    display: flex;
+    padding-top: 20px;
+    @font-face {
+        font-family: 'CustomFont';
+        src: url('Josefin_Sans/static/JosefinSans-Bold.ttf') format('truetype');
+    }
+}
+
+.menu_bar ul li {
+    padding: 10px 30px;
+    position: relative;
+}
+
+.menu_bar ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    transition: all 0.3s;
+}
+
+.menu_bar ul li a:hover {
+    color: #0066ff;
+}
+
+.dropdown__menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 100; /* Set a higher z-index value */
+    background-color: rgb(255, 255, 255);
+    @font-face {
+        font-family: 'CustomFont';
+        src: url('Josefin_Sans/static/JosefinSans-SemiBold.ttf') format('truetype');
+    }
+    
+}
+
+.menu_bar ul li:hover .dropdown__menu {
+    display: block;
+}
+
+.menu_bar ul li:hover .dropdown__menu ul {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.menu_bar ul li:hover .dropdown__menu ul li {
+    width: 150px;
+    padding: 10px;
+}
+
+
+
+.sup {
+    display: flex;
+    text-align: right;
+    justify-content: right;
+    margin-top: 5px;
+    
+}
+
+.mr {
+    padding-top: 20px;
+    font-size: medium;
+    text-align: right;
+}
+
+.mr a {
+    text-decoration: none;
+    color: black;
+}
+
+.mr a:hover {
+    text-decoration: wavy;
+    color: rgb(0, 47, 255);
+}
+
+.sign {
+    font-size: medium;
+    padding-top: 20px;
+    margin-left: 8px;
+}
+
+.sign a {
+    text-decoration: none;
+    color: black;
+}
+
+.sign a:hover {
+    text-decoration: solid;
+    color: rgb(0, 47, 255);
+}
+
+.add {
+    background-color: #0066ff;
+    font-size: medium;
+    color: aliceblue;
+    padding-right: 8px;
+    padding-left: 8px;
+    margin-left: 11px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: right;
+}
+
+.add a {
+    text-decoration: none;
+    color: white;
+}
+
+.add a:hover {
+    text-decoration: underline;
+    text-decoration-line: underline;
+}
+
+.image-container {
+    position: relative;
+    
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.row1{
+    background-color: #F2FAFF;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.sellt h4{
+    font-size: 50px;
+    font-family:'lato', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+.sellt p{
+    font-size: larger;
+    font-family:'lato', sans-serif;
+    padding-top: 20px;
+}
+
+.mail{
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+input {
+    width: 700px;
+    height: 50px;
+    letter-spacing: 1.5px;
+    padding-left: 15px;
+    margin-top: 3px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid;
+    border-color: #0066ff;
+}
+
+input:hover {
+    border-color: #0066ff;
+    border-style: double;
+}
+
+input:focus {
+    border-color: 0066ff;
+    border-width: 2px;
+    outline: none;
+}
+
+.sm1{
+    padding-top: 70px;
+    padding-left: 20px;
+    
+}
+
+.mail button{
+    color: #0066ff;
+    border: #0066ff;
+    margin-left: -45px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-right: 5px;
+    background-color: transparent;
+    font-size: 20px;
+}
+
+.row2{
+    padding-top: 30px;
+}
+
+.sellt2{
+    margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.sellt2 h4{
+    font-size: 40px;
+    padding-bottom: 5px;
+}
+
+.sellt2 p{
+    font-size: 20px;
+}
+
+.btnn{
+    height: 60px;
+    width: 230px;
+    background-color:#0066ff;
+    border: 0px;
+    border-radius: 4px;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin-top: 10px;
+}
+
+.btnn:hover{
+    background-color: #1663d8;
+}
+
+.why{
+    font-family:'lato', sans-serif;
+    font-weight: bold;
+}
+
+.why h4{
+    font-weight:bolder;
+    font-family:'lato', sans-serif;
+}
+.why p{
+    font-size: medium;
+    font-family:'lato', sans-serif; 
+    margin-top: 20px;
+}
+
+.how{
+    font-family:'lato', sans-serif;
+}
+
+.how h4{
+    font-weight:bolder;
+    font-family:'lato', sans-serif;
+
+
+}
+
+.how p{
+    font-size: medium;
+    font-family:'lato', sans-serif;
+    margin-top: 20px;
+}
+
+.right{
+    text-align: right;
+}

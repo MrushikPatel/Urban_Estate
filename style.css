@@ -1,0 +1,357 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    border: 1px solid #ccc;
+    margin: 20px 0;
+    opacity: 0.05 !important;
+    /* Adjust the opacity value (0 to 1) as needed */
+}
+
+.menu_bar {
+    height: 80px;
+    width: 100%;
+    color: rgb(37, 37, 37);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    
+    
+}
+.menu_bar img{
+    margin-top: 0px;
+    margin-bottom: 12px;
+}
+
+.menu_bar ul {
+    list-style: none;
+    display: flex;
+    padding-top: 20px;
+    @font-face {
+        font-family: 'CustomFont';
+        src: url('Josefin_Sans/static/JosefinSans-Bold.ttf') format('truetype');
+    }
+}
+
+.menu_bar ul li {
+    padding: 10px 30px;
+    position: relative;
+}
+
+.menu_bar ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    transition: all 0.3s;
+}
+
+.menu_bar ul li a:hover {
+    color: #0066ff;
+}
+
+.dropdown__menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 100; /* Set a higher z-index value */
+    background-color: rgb(255, 255, 255);
+    @font-face {
+        font-family: 'CustomFont';
+        src: url('Josefin_Sans/static/JosefinSans-SemiBold.ttf') format('truetype');
+    }
+    
+}
+
+.menu_bar ul li:hover .dropdown__menu {
+    display: block;
+}
+
+.menu_bar ul li:hover .dropdown__menu ul {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.menu_bar ul li:hover .dropdown__menu ul li {
+    width: 150px;
+    padding: 10px;
+}
+
+.sup {
+    display: flex;
+    text-align: right;
+    justify-content: right;
+    margin-top: 5px;
+    
+}
+
+.mr {
+    padding-top: 20px;
+    font-size: medium;
+    text-align: right;
+}
+
+.mr a {
+    text-decoration: none;
+    color: black;
+}
+
+.mr a:hover {
+    text-decoration: wavy;
+    color: rgb(0, 47, 255);
+}
+
+.sign {
+    font-size: medium;
+    padding-top: 20px;
+    margin-left: 10px;
+}
+
+.sign a {
+    text-decoration: none;
+    color: black;
+}
+
+.sign a:hover {
+    text-decoration: solid;
+    color: rgb(0, 47, 255);
+}
+
+.add {
+    background-color: #0066ff;
+    font-size: medium;
+    color: aliceblue;
+    padding-right: 8px;
+    padding-left: 5px;
+    margin-top: 1px;
+    margin-left: 10px;
+    padding-bottom: 7px;
+    padding-top: 10px;
+    
+}
+
+.add a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+.add a:hover {
+    text-decoration: underline;
+    text-decoration-line: underline;
+}
+
+
+
+.image-container {
+    position: relative;
+}
+
+.bg-image {
+    font: 1em sans-serif;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+p {
+    font-size: x-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.in {
+    margin-top: 30px;
+    display: flex;
+}
+
+input:focus {
+
+    outline-offset: 0px;
+    outline: none;
+}
+
+input {
+    text-decoration: none;
+    border-radius: 4px;
+    border-color: white;
+    border: 2px;
+    margin-top: 70px;
+    width: 90%;
+    height: 40px;
+    padding-left: 9px;
+    padding-bottom: 9px;
+    font-size: 1px;
+}
+
+
+input::placeholder {
+    font-size: large;
+    size: 10px;
+}
+
+
+.b {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.bt {
+    background-color: green;
+    margin-left: 3px;
+    margin-top: -15px;
+    height: 40px;
+    font-size: large;
+
+}
+
+.bt:hover {
+    background-color: rgb(16, 153, 16);
+}
+
+button {
+    border: 0px;
+    border-radius: 3px;
+    size: 100px;
+    border-color: white;
+    background-color: white;
+    margin-left: 10px;
+    padding-left: 5px;
+}
+
+.t {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-family: sans-serif;
+
+
+}
+
+.imgg {
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+
+
+.responsive {
+    width: 370px;
+    height: 300px;
+    border-color: black;
+    border: 1px;
+}
+
+.responsive:hover {
+    border-radius: 2px;
+    border-color: black;
+    border: 5px;
+    box-shadow: blue;
+
+
+}
+
+.mage:hover img {
+    transform: scale(1.1); /* Adjust the scale factor for the desired zoom level */
+    border: 5px;
+    border-color: black;
+}
+
+.list {
+    padding-bottom: 10px;
+    margin-left: 0;
+}
+
+.vc {
+    background-color: rgb(8, 82, 240);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 1px;
+    border-color: rgb(17, 14, 211);
+    border-radius: 4px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: white;
+    margin: 0 auto;
+    display: block;
+    width: 100px;
+    height: 50px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    margin-top: 30px;
+    margin-bottom: 15px;
+
+}
+
+.vc:hover {
+    background-color: rgb(38, 0, 255);
+}
+
+.Rental{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.Rental p{
+    font-weight:300;
+    font-size: x-large;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Renting{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    background-color: #f1f1f1;
+}
+
+.TD{
+    padding-left: 30px;
+
+}
+
+.Renting p{
+    font-weight:300;
+    font-size: large;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+}
+
+.LINK{
+    padding-left: 30px;
+    font-size: larger;
+}
+
+.LINK a{
+    text-decoration: none;
+    color: #0576A7;
+}
+
+.LINK a:hover{
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.C1{
+    margin-bottom: -52px;
+}
+

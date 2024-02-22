@@ -1,0 +1,201 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.menu_bar {
+    height: 80px;
+    width: 100%;
+    color: rgb(37, 37, 37);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    
+    
+}
+.menu_bar img{
+    margin-top: 0px;
+    margin-bottom: 12px;
+}
+
+.menu_bar ul {
+    list-style: none;
+    display: flex;
+    padding-top: 20px;
+    @font-face {
+        font-family: 'CustomFont';
+        src: url('Josefin_Sans/static/JosefinSans-Bold.ttf') format('truetype');
+    }
+}
+
+.menu_bar ul li {
+    padding: 10px 30px;
+    position: relative;
+}
+
+.menu_bar ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    transition: all 0.3s;
+}
+
+.menu_bar ul li a:hover {
+    color: #0066ff;
+}
+
+.dropdown__menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 100; /* Set a higher z-index value */
+    background-color: rgb(255, 255, 255);
+    @font-face {
+        font-family: 'CustomFont';
+        src: url('Josefin_Sans/static/JosefinSans-SemiBold.ttf') format('truetype');
+    }
+    
+}
+
+.menu_bar ul li:hover .dropdown__menu {
+    display: block;
+}
+
+.menu_bar ul li:hover .dropdown__menu ul {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.menu_bar ul li:hover .dropdown__menu ul li {
+    width: 150px;
+    padding: 10px;
+}
+
+
+.overlay-text{
+    text-align: left;
+}
+
+.r1{
+    width: 50px;
+}
+
+.container {
+    position: relative;
+    max-width: 100%;
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 54%;
+    left: 12px;
+    color: white;
+    background-color: #0D4599;
+    font-weight: bold;
+    font-size: xx-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    padding-right: 0px;
+    max-width: 80%; /* Change width to a percentage for responsiveness */
+}
+
+.OT {
+    position: absolute;
+    top: 66.8%;
+    left: 1%;
+    color: white;
+    background-color: #0074E4E6;
+    font-weight: bold;
+    width: 98.1%;
+    padding-bottom: 30px;
+}
+
+.OT p {
+    padding-top: 20px;
+    padding-left: 23px;
+    font-size: large;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+}
+
+.in input,
+.city input,
+.zip input {
+    width: 100%; /* Change width to 100% for responsiveness */
+    max-width: 500px; /* Add a max-width for larger screens */
+    padding-left: 10px;
+    margin-left: 20px;
+    height: 40px;
+    outline: none;
+    border: #0066ff;
+    letter-spacing: 1px;
+    justify-content: center;
+}
+
+.in input:hover,
+.city input:hover,
+.zip input:hover {
+    border-radius: 5px;
+}
+
+.OT button {
+    background-color: #3DCA5A;
+    margin-left: 5%; /* Adjust margin for responsiveness */
+    height: 40px;
+    margin-bottom: 1px;
+    border: none;
+    border-radius: 5px;
+    width: 56%; /* Adjust width for responsiveness */
+    max-width: 200px; /* Add a max-width for larger screens */
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.OT button:hover {
+    background-color: #39b953;
+}
+
+/* Media Query for screens smaller than 576px */
+@media (max-width: 575.98px) {
+    .overlay-text {
+        max-width: 100%;
+    }
+
+    .OT {
+        width: 100%;
+    }
+
+    .OT button {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+.OT hr{
+    color: rgb(255, 255, 255);
+    width: 90%;
+    margin-top: -15px;
+    margin-left: 20px;
+    border: 1.9px solid white; 
+
+    
+}
+.whyp{
+    text-align: center;
+    padding-top: 60px;
+}
